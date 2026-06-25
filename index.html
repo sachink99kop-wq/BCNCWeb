@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Belgaum CNC Pvt Ltd | Precision CNC VMC HMC Machining | Belagavi</title>
+<meta name="description" content="Belgaum CNC Pvt Ltd offers precision subcontract CNC, VMC & HMC machining, casting procurement & complete processing, with domestic and export supply from Belagavi, Karnataka, India." />
+<meta name="keywords" content="CNC machining Belgaum, VMC machining, HMC machining, subcontract machining Karnataka, casting procurement, precision components, export machining India" />
+<meta name="author" content="Belgaum CNC Pvt Ltd" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Belgaum CNC Pvt Ltd | Precision CNC VMC HMC Machining" />
+<meta property="og:description" content="Subcontract CNC | VMC | HMC machining, casting procurement & processing, domestic & export supply from Belagavi, Karnataka." />
+<meta property="og:site_name" content="Belgaum CNC Pvt Ltd" />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Belgaum CNC Pvt Ltd | Precision CNC VMC HMC Machining" />
+<meta name="twitter:description" content="Subcontract CNC | VMC | HMC machining, casting procurement & processing, domestic & export supply." />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<!-- AOS -->
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          base: '#0a0a0f',
+          surface: '#111118',
+          eb:   '#0ea5e9',
+          steel:'#f97316',
+        },
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['Rajdhani', 'sans-serif'],
+        },
+        borderRadius: {
+          card: '12px',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#0a0a0f; color:#e5e7eb; }
+
+  /* Gradient heading text */
+  .gradient-text{
+    background:linear-gradient(90deg,#0ea5e9 0%,#f97316 100%);
+    -webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;
+  }
+
+  /* Glass card */
+  .glass{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;
+    backdrop-filter:blur(6px);
+  }
+
+  /* Steel/metal gradient feel */
+  .steel-bg{
+    background:
+      linear-gradient(135deg,rgba(14,165,233,0.06),transparent 40%),
+      linear-gradient(315deg,rgba(249,115,22,0.06),transparent 40%),
+      #111118;
+  }
+
+  /* Hero grid + dot pattern */
+  .hero-grid{
+    background-color:#0a0a0f;
+    background-image:
+      linear-gradient(rgba(14,165,233,0.07) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(14,165,233,0.07) 1px,transparent 1px),
+      radial-gradient(rgba(249,115,22,0.10) 1px,transparent 1px);
+    background-size:48px 48px,48px 48px,48px 48px;
+    background-position:0 0,0 0,24px 24px;
+    animation:gridShift 30s linear infinite;
+  }
+  @keyframes gridShift{
+    from{background-position:0 0,0 0,24px 24px;}
+    to{background-position:48px 48px,48px 48px,72px 72px;}
+  }
+
+  /* Floating particles */
+  .particle{
+    position:absolute;border-radius:9999px;
+    background:#0ea5e9;opacity:.5;
+    box-shadow:0 0 8px 2px rgba(14,165,233,.6);
+    animation:floatUp linear infinite;
+  }
+  @keyframes floatUp{
+    0%{transform:translateY(0) scale(1);opacity:0;}
+    10%{opacity:.6;}
+    50%{opacity:.9;transform:translateY(-40px) scale(1.2);}
+    90%{opacity:.4;}
+    100%{transform:translateY(-90px) scale(.8);opacity:0;}
+  }
+
+  /* Rotating gear */
+  .spin-slow{animation:spin 20s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  /* Navbar shrink */
+  #navbar{transition:padding .3s ease, background-color .3s ease, box-shadow .3s ease;}
+  #navbar.scrolled{
+    padding-top:.4rem;padding-bottom:.4rem;
+    background:rgba(10,10,15,.85);
+    box-shadow:0 8px 30px rgba(0,0,0,.5);
+  }
+
+  /* Service / generic card hover */
+  .lift{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
+  .lift:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 40px rgba(14,165,233,.18);
+  }
+  .top-line{position:relative;overflow:hidden;}
+  .top-line::before{
+    content:"";position:absolute;top:0;left:0;height:3px;width:100%;
+    background:linear-gradient(90deg,#0ea5e9,#f97316);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s ease;
+  }
+  .top-line:hover::before{transform:scaleX(1);}
+
+  /* Button hover */
+  .btn-hover{transition:transform .25s ease, box-shadow .25s ease;}
+  .btn-hover:hover{transform:scale(1.03);}
+  .btn-orange:hover{box-shadow:0 0 24px rgba(249,115,22,.55);}
+  .btn-blue:hover{box-shadow:0 0 24px rgba(14,165,233,.45);}
+
+  /* Input focus glow */
+  .glow-input:focus{
+    outline:none;border-color:#0ea5e9;
+    box-shadow:0 0 0 3px rgba(14,165,233,.3);
+  }
+
+  /* Logo ticker */
+  .ticker-track{
+    display:flex;width:max-content;
+    animation:ticker 28s linear infinite;
+  }
+  .ticker:hover .ticker-track{animation-play-state:paused;}
+  @keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* Active nav link */
+  .nav-link.active{color:#0ea5e9;}
+  .nav-link.active::after{width:100%;}
+  .nav-link{position:relative;}
+  .nav-link::after{
+    content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;
+    background:linear-gradient(90deg,#0ea5e9,#f97316);transition:width .3s ease;
+  }
+  .nav-link:hover::after{width:100%;}
+
+  /* Industry hover scale */
+  .scale-hover{transition:transform .3s ease, border-color .3s ease;}
+  .scale-hover:hover{transform:scale(1.05);border-color:rgba(14,165,233,.5);}
+</style>
+</head>
+
+<body class="font-sans antialiased selection:bg-eb/30">
+
+<!-- ============ NAVBAR ============ -->
+<nav id="navbar" class="fixed top-0 inset-x-0 z-50 py-4 backdrop-blur-md bg-base/60 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-2 group">
+      <span class="w-10 h-10 rounded-card grid place-items-center bg-gradient-to-br from-eb to-steel shadow-lg shadow-eb/30">
+        <i class="fa-solid fa-gear text-white text-lg spin-slow"></i>
+      </span>
+      <span class="leading-none">
+        <span class="font-display font-bold text-xl tracking-wide text-white">Belgaum CNC</span>
+        <span class="block text-[11px] tracking-[0.25em] text-eb/80 uppercase">Pvt Ltd.</span>
+      </span>
+    </a>
+
+    <!-- Desktop links -->
+    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+      <li><a href="#home"       class="nav-link">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#services"   class="nav-link">Services</a></li>
+      <li><a href="#products"   class="nav-link">Products</a></li>
+      <li><a href="#industries" class="nav-link">Industries</a></li>
+      <li><a href="#whyus"      class="nav-link">Why Us</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="flex items-center gap-3">
+      <a href="#contact" class="hidden sm:inline-flex btn-hover btn-orange items-center gap-2 bg-steel text-white text-sm font-semibold px-5 py-2.5 rounded-card">
+        <i class="fa-solid fa-file-lines"></i> Get Quote
+      </a>
+      <!-- Hamburger -->
+      <button id="hamburger" aria-label="Toggle menu" class="lg:hidden w-10 h-10 grid place-items-center rounded-card glass text-white">
+        <i id="hamburger-icon" class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-base/95 backdrop-blur-md">
+    <ul class="flex flex-col px-6 py-4 gap-1 text-gray-200 font-medium">
+      <li><a href="#home"       class="mnav block py-2.5">Home</a></li>
+      <li><a href="#about"      class="mnav block py-2.5">About</a></li>
+      <li><a href="#services"   class="mnav block py-2.5">Services</a></li>
+      <li><a href="#products"   class="mnav block py-2.5">Products</a></li>
+      <li><a href="#industries" class="mnav block py-2.5">Industries</a></li>
+      <li><a href="#whyus"      class="mnav block py-2.5">Why Us</a></li>
+      <li><a href="#contact"    class="mnav block py-2.5">Contact</a></li>
+      <li><a href="#contact" class="mnav mt-2 inline-flex items-center gap-2 bg-steel text-white font-semibold px-5 py-2.5 rounded-card justify-center"><i class="fa-solid fa-file-lines"></i> Get Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="home" class="relative min-h-screen flex items-center hero-grid overflow-hidden pt-28 pb-16">
+  <!-- particles -->
+  <div id="particles" class="absolute inset-0 pointer-events-none"></div>
+
+  <!-- decorative rotating gear -->
+  <div class="absolute -right-32 top-1/2 -translate-y-1/2 opacity-[0.06] pointer-events-none hidden md:block">
+    <i class="fa-solid fa-gear spin-slow text-eb" style="font-size:36rem;"></i>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 w-full">
+    <div class="max-w-3xl">
+      <span data-aos="fade-up" class="inline-flex items-center gap-2 glass px-4 py-1.5 text-xs font-semibold tracking-widest uppercase text-eb mb-6">
+        <i class="fa-solid fa-industry"></i> Belagavi · Karnataka · India
+      </span>
+
+      <h1 data-aos="fade-up" data-aos-delay="80" class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-white">
+        Precision Engineered.<br />
+        <span class="gradient-text">Built to Perform.</span>
+      </h1>
+
+      <p data-aos="fade-up" data-aos-delay="160" class="mt-6 text-base sm:text-lg text-gray-300 max-w-2xl">
+        Subcontract CNC | VMC | HMC Machining • Casting Procurement &amp; Processing • Domestic &amp; Export Supply
+      </p>
+
+      <div data-aos="fade-up" data-aos-delay="240" class="mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="#services" class="btn-hover btn-blue inline-flex items-center justify-center gap-2 border border-eb text-eb font-semibold px-7 py-3.5 rounded-card hover:bg-eb/10">
+          <i class="fa-solid fa-screwdriver-wrench"></i> Explore Our Services
+        </a>
+        <a href="#contact" class="btn-hover btn-orange inline-flex items-center justify-center gap-2 bg-steel text-white font-semibold px-7 py-3.5 rounded-card">
+          <i class="fa-solid fa-paper-plane"></i> Request a Quote
+        </a>
+      </div>
+
+      <!-- counters -->
+      <div data-aos="fade-up" data-aos-delay="320" class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="glass p-5 text-center">
+          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="15">0</span>+</div>
+          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Years Experience</p>
+        </div>
+        <div class="glass p-5 text-center">
+          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="500">0</span>+</div>
+          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Components Machined</p>
+        </div>
+        <div class="glass p-5 text-center">
+          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="50">0</span>+</div>
+          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Clients Served</p>
+        </div>
+        <div class="glass p-5 text-center">
+          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="10">0</span>+</div>
+          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Export Countries</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce hidden sm:block">
+    <i class="fa-solid fa-chevron-down text-xl"></i>
+  </a>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="steel-bg py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <!-- text -->
+      <div data-aos="fade-up">
+        <span class="text-eb font-semibold tracking-widest uppercase text-sm">Who We Are</span>
+        <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Engineering Trust, One Component at a Time</h2>
+        <p class="mt-6 text-gray-300 leading-relaxed">
+          Belgaum CNC Pvt Ltd is a precision machining company based in Belagavi, Karnataka. We specialise in
+          <strong class="text-white">subcontract CNC, VMC and HMC machining</strong> for OEMs, fabricators and
+          manufacturers who need reliable capacity and consistent quality. From single prototypes to repeat
+          production batches, we machine to your drawings and your tolerances.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          Beyond machining alone, we handle <strong class="text-white">casting procurement and complete
+          processing</strong> — sourcing quality castings, then carrying out all required machining operations
+          in-house. This single-point responsibility removes coordination headaches and keeps your supply chain lean.
+        </p>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          With a strong record in both <strong class="text-white">domestic and export sales</strong>, we deliver
+          finished, inspection-ready components to customers across India and overseas — on specification and on time.
+        </p>
+
+        <!-- feature pills -->
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-certificate text-eb"></i> ISO Quality</span>
+          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-ruler-combined text-steel"></i> Precision Machining</span>
+          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-truck-fast text-eb"></i> On-Time Delivery</span>
+        </div>
+      </div>
+
+      <!-- stat grid -->
+      <div data-aos="fade-up" data-aos-delay="150" class="grid grid-cols-2 gap-5">
+        <div class="glass lift p-6">
+          <i class="fa-solid fa-microchip text-3xl text-eb"></i>
+          <div class="font-display text-3xl font-bold text-white mt-4">3 Lines</div>
+          <p class="text-sm text-gray-400 mt-1">CNC · VMC · HMC machining capacity</p>
+        </div>
+        <div class="glass lift p-6">
+          <i class="fa-solid fa-bullseye text-3xl text-steel"></i>
+          <div class="font-display text-3xl font-bold text-white mt-4">±0.01mm</div>
+          <p class="text-sm text-gray-400 mt-1">Achievable tight tolerances</p>
+        </div>
+        <div class="glass lift p-6">
+          <i class="fa-solid fa-globe text-3xl text-eb"></i>
+          <div class="font-display text-3xl font-bold text-white mt-4">10+</div>
+          <p class="text-sm text-gray-400 mt-1">Countries supplied via export</p>
+        </div>
+        <div class="glass lift p-6">
+          <i class="fa-solid fa-handshake-angle text-3xl text-steel"></i>
+          <div class="font-display text-3xl font-bold text-white mt-4">50+</div>
+          <p class="text-sm text-gray-400 mt-1">Active domestic &amp; export clients</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-eb font-semibold tracking-widest uppercase text-sm">What We Do</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Our Core Services</h2>
+      <p class="mt-4 text-gray-400">End-to-end machining and supply solutions, engineered around your production needs.</p>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- card -->
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-gears"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">CNC Machining</h3>
+        <p class="mt-2 text-sm text-gray-400">Turned and milled precision components with repeatable accuracy across single parts and production batches.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-microchip"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">VMC Machining</h3>
+        <p class="mt-2 text-sm text-gray-400">Vertical machining centres for complex prismatic parts, fixtures and tight-tolerance milled features.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-layer-group"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">HMC Machining</h3>
+        <p class="mt-2 text-sm text-gray-400">Horizontal machining centres for high-volume, multi-face components with superior chip evacuation.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-box-open"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">Casting Procurement</h3>
+        <p class="mt-2 text-sm text-gray-400">Sourcing quality CI, MS and alloy castings, then fully machining them to finished, inspected parts.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-users-gear"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">Subcontract Manufacturing</h3>
+        <p class="mt-2 text-sm text-gray-400">Flexible overflow and dedicated capacity for OEMs — machine to your drawings, schedules and quality plans.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="glass lift top-line p-7">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-earth-asia"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-white">Export Supply</h3>
+        <p class="mt-2 text-sm text-gray-400">Export-ready documentation, packaging and logistics for reliable overseas delivery of finished components.</p>
+        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" class="py-24 steel-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-steel font-semibold tracking-widest uppercase text-sm">How We Deliver</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Our Manufacturing Process</h2>
+    </div>
+
+    <div class="mt-16 relative">
+      <!-- dashed connector (desktop) -->
+      <div class="hidden lg:block absolute top-8 left-0 right-0 border-t-2 border-dashed border-white/15"></div>
+
+      <div class="grid lg:grid-cols-5 gap-8 relative">
+        <!-- step -->
+        <div data-aos="fade-up" data-aos-delay="0" class="text-center">
+          <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">01</div>
+          <i class="fa-solid fa-clipboard-list text-2xl text-eb mt-5"></i>
+          <h3 class="mt-3 font-display font-bold text-lg text-white">Requirement Analysis</h3>
+          <p class="mt-2 text-sm text-gray-400">Drawings, tolerances, volumes and timelines reviewed with the customer.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150" class="text-center">
+          <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">02</div>
+          <i class="fa-solid fa-box text-2xl text-eb mt-5"></i>
+          <h3 class="mt-3 font-display font-bold text-lg text-white">Material / Casting Procurement</h3>
+          <p class="mt-2 text-sm text-gray-400">Quality raw material and castings sourced from trusted suppliers.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300" class="text-center">
+          <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-steel text-steel font-display font-bold text-xl">03</div>
+          <i class="fa-solid fa-gears text-2xl text-steel mt-5"></i>
+          <h3 class="mt-3 font-display font-bold text-lg text-white">CNC / VMC / HMC Machining</h3>
+          <p class="mt-2 text-sm text-gray-400">Precision machining operations executed to specification in-house.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="450" class="text-center">
+          <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">04</div>
+          <i class="fa-solid fa-magnifying-glass-chart text-2xl text-eb mt-5"></i>
+          <h3 class="mt-3 font-display font-bold text-lg text-white">Quality Inspection</h3>
+          <p class="mt-2 text-sm text-gray-400">Dimensional checks and inspection reports before dispatch.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" class="text-center">
+          <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-steel text-steel font-display font-bold text-xl">05</div>
+          <i class="fa-solid fa-truck-ramp-box text-2xl text-steel mt-5"></i>
+          <h3 class="mt-3 font-display font-bold text-lg text-white">Delivery (Domestic / Export)</h3>
+          <p class="mt-2 text-sm text-gray-400">Packed, documented and shipped to domestic or overseas customers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES / PRODUCTS ============ -->
+<section id="products" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-eb font-semibold tracking-widest uppercase text-sm">Our Capability</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Machining Capabilities</h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <!-- CNC -->
+      <div data-aos="fade-up" class="glass lift p-8">
+        <div class="flex items-center gap-3">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-gears"></i></span>
+          <h3 class="font-display font-bold text-2xl text-white">CNC Turning</h3>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-gray-300">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Tolerances down to ±0.01 mm</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Bar &amp; chuck work up to Ø300 mm</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> MS, CI, alloy &amp; stainless steels</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Prototype to high-volume batches</li>
+        </ul>
+      </div>
+      <!-- VMC -->
+      <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-8">
+        <div class="flex items-center gap-3">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-steel/15 text-steel text-xl"><i class="fa-solid fa-microchip"></i></span>
+          <h3 class="font-display font-bold text-2xl text-white">VMC Milling</h3>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-gray-300">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Work envelope up to 1000×500×500 mm</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> 3-axis precision milling</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Complex prismatic &amp; cast parts</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Surface finish to Ra 0.8</li>
+        </ul>
+      </div>
+      <!-- HMC -->
+      <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-8">
+        <div class="flex items-center gap-3">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-layer-group"></i></span>
+          <h3 class="font-display font-bold text-2xl text-white">HMC Machining</h3>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-gray-300">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Pallet-changer high productivity</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Multi-face machining in one setup</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Ideal for heavy CI castings</li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Superior chip evacuation</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- materials -->
+    <div class="mt-14 text-center" data-aos="fade-up">
+      <h3 class="font-display font-semibold text-lg text-gray-300 mb-6">Materials We Work With</h3>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Mild Steel (MS)</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Cast Iron (CI)</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Aluminium</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Brass</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Stainless Steel</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Alloy Steel</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Bronze</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Titanium</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INDUSTRIES ============ -->
+<section id="industries" class="py-24 steel-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-steel font-semibold tracking-widest uppercase text-sm">Sectors</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Industries We Serve</h2>
+    </div>
+
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-5">
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-car-side text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Automotive</h3></div>
+      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-jet-fighter text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Aerospace</h3></div>
+      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-oil-well text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Hydraulics</h3></div>
+      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-faucet text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Pumps &amp; Valves</h3></div>
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-tractor text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Agricultural Equipment</h3></div>
+      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-screwdriver-wrench text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">General Engineering</h3></div>
+      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-shield-halved text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Defence</h3></div>
+      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-gas-pump text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Oil &amp; Gas</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section id="whyus" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+      <!-- left card -->
+      <div data-aos="fade-up" class="glass p-10 flex flex-col justify-center relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 opacity-10"><i class="fa-solid fa-gear text-[14rem] text-eb spin-slow"></i></div>
+        <span class="text-eb font-semibold tracking-widest uppercase text-sm relative">Why Choose Us</span>
+        <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text relative">Built on Precision &amp; Trust</h2>
+        <p class="mt-6 text-gray-300 relative">
+          We combine modern machining capacity with disciplined quality control and dependable delivery.
+          From casting to finished part, you get one accountable partner committed to your specification —
+          whether you ship across the district or across the world.
+        </p>
+        <a href="#contact" class="mt-8 btn-hover btn-orange inline-flex w-max items-center gap-2 bg-steel text-white font-semibold px-7 py-3.5 rounded-card relative">
+          <i class="fa-solid fa-comments"></i> Talk to Our Team
+        </a>
+      </div>
+
+      <!-- right 2x2 -->
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div data-aos="fade-up" data-aos-delay="0"   class="glass lift p-7"><i class="fa-solid fa-bullseye text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Precision Quality</h3><p class="mt-2 text-sm text-gray-400">Tight tolerances held consistently across every batch we produce.</p></div>
+        <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-7"><i class="fa-solid fa-users-gear text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Subcontract Experts</h3><p class="mt-2 text-sm text-gray-400">Flexible capacity that scales with your demand and schedules.</p></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-7"><i class="fa-solid fa-industry text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Casting to Finish</h3><p class="mt-2 text-sm text-gray-400">Full process under one roof — procurement through finished part.</p></div>
+        <div data-aos="fade-up" data-aos-delay="300" class="glass lift p-7"><i class="fa-solid fa-globe text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Domestic &amp; Export</h3><p class="mt-2 text-sm text-gray-400">Proven global supply with export-ready documentation and logistics.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTS / TRUST ============ -->
+<section class="py-20 steel-bg border-y border-white/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <h2 class="text-center font-display font-bold text-2xl sm:text-3xl text-gray-300" data-aos="fade-up">Trusted By</h2>
+    <p class="text-center text-gray-500 mt-2 text-sm" data-aos="fade-up">Manufacturers and OEMs who rely on our machining capacity</p>
+
+    <div class="ticker mt-10 overflow-hidden">
+      <div class="ticker-track gap-5">
+        <!-- duplicated for seamless loop -->
+        <span class="logo-pill"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-eb font-semibold tracking-widest uppercase text-sm">Get In Touch</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Request a Quote</h2>
+      <p class="mt-4 text-gray-400">Send us your drawings or requirements and our team will respond promptly.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-2 gap-10">
+      <!-- info -->
+      <div data-aos="fade-up" class="space-y-5">
+        <div class="glass p-6 flex gap-4">
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-eb/15 text-eb text-lg"><i class="fa-solid fa-location-dot"></i></span>
+          <div><h3 class="font-display font-bold text-white">Address</h3><p class="text-sm text-gray-400 mt-1">Industrial Estate, Belagavi (Belgaum),<br>Karnataka 590001, India</p></div>
+        </div>
+        <div class="glass p-6 flex gap-4">
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-steel/15 text-steel text-lg"><i class="fa-solid fa-phone"></i></span>
+          <div><h3 class="font-display font-bold text-white">Phone</h3><p class="text-sm text-gray-400 mt-1">+91 99XXX XXXXX<br>+91 88XXX XXXXX</p></div>
+        </div>
+        <div class="glass p-6 flex gap-4">
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-eb/15 text-eb text-lg"><i class="fa-solid fa-envelope"></i></span>
+          <div><h3 class="font-display font-bold text-white">Email</h3><p class="text-sm text-gray-400 mt-1">sales@belgaumcnc.com<br>export@belgaumcnc.com</p></div>
+        </div>
+        <div class="glass p-6 flex gap-4">
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-steel/15 text-steel text-lg"><i class="fa-solid fa-clock"></i></span>
+          <div><h3 class="font-display font-bold text-white">Working Hours</h3><p class="text-sm text-gray-400 mt-1">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: Closed</p></div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <div data-aos="fade-up" data-aos-delay="150">
+        <form id="quote-form" class="glass p-7 sm:p-9 space-y-5">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">Name</label>
+              <input required type="text" name="name" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Your name" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">Company Name</label>
+              <input type="text" name="company" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Company" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">Email</label>
+              <input required type="email" name="email" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="you@email.com" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">Phone</label>
+              <input type="tel" name="phone" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="+91" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">Service Required</label>
+            <select name="service" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white">
+              <option value="">Select a service…</option>
+              <option>CNC Machining</option>
+              <option>VMC Machining</option>
+              <option>HMC Machining</option>
+              <option>Subcontract Manufacturing</option>
+              <option>Export Supply</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">Message</label>
+            <textarea name="message" rows="4" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Tell us about your components, quantities and timelines…"></textarea>
+          </div>
+          <button type="submit" class="btn-hover btn-orange w-full inline-flex items-center justify-center gap-2 bg-steel text-white font-semibold px-7 py-3.5 rounded-card">
+            Send Request <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <p id="form-success" class="hidden text-center text-sm text-green-400 bg-green-500/10 border border-green-500/30 rounded-card py-3">
+            <i class="fa-solid fa-circle-check"></i> Thank you! Your request has been received. We'll be in touch shortly.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-surface border-t border-white/5 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- brand -->
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="w-10 h-10 rounded-card grid place-items-center bg-gradient-to-br from-eb to-steel"><i class="fa-solid fa-gear text-white spin-slow"></i></span>
+          <span><span class="font-display font-bold text-lg text-white">Belgaum CNC</span><span class="block text-[10px] tracking-[0.25em] text-eb/80 uppercase">Pvt Ltd.</span></span>
+        </div>
+        <p class="mt-4 text-sm text-gray-400">Precision subcontract CNC, VMC &amp; HMC machining, casting procurement and processing — domestic &amp; export supply from Belagavi, Karnataka.</p>
+        <div class="flex gap-3 mt-5">
+          <a href="#" aria-label="LinkedIn" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-eb hover:border-eb/50 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#contact" aria-label="Email" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-steel transition"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- quick links -->
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Quick Links</h3>
+        <ul class="space-y-2.5 text-sm text-gray-400">
+          <li><a href="#home" class="hover:text-eb transition">Home</a></li>
+          <li><a href="#about" class="hover:text-eb transition">About Us</a></li>
+          <li><a href="#process" class="hover:text-eb transition">Process</a></li>
+          <li><a href="#industries" class="hover:text-eb transition">Industries</a></li>
+          <li><a href="#whyus" class="hover:text-eb transition">Why Us</a></li>
+        </ul>
+      </div>
+
+      <!-- services -->
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Services</h3>
+        <ul class="space-y-2.5 text-sm text-gray-400">
+          <li><a href="#services" class="hover:text-eb transition">CNC Machining</a></li>
+          <li><a href="#services" class="hover:text-eb transition">VMC Machining</a></li>
+          <li><a href="#services" class="hover:text-eb transition">HMC Machining</a></li>
+          <li><a href="#services" class="hover:text-eb transition">Casting Procurement</a></li>
+          <li><a href="#services" class="hover:text-eb transition">Export Supply</a></li>
+        </ul>
+      </div>
+
+      <!-- contact -->
+      <div>
+        <h3 class="font-display font-bold text-white mb-4">Contact Info</h3>
+        <ul class="space-y-3 text-sm text-gray-400">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot text-eb mt-1"></i> Industrial Estate, Belagavi, Karnataka 590001</li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone text-eb mt-1"></i> +91 99XXX XXXXX</li>
+          <li class="flex gap-3"><i class="fa-solid fa-envelope text-eb mt-1"></i> sales@belgaumcnc.com</li>
+          <li class="flex gap-3"><i class="fa-solid fa-clock text-eb mt-1"></i> Mon – Sat, 9:00 AM – 7:00 PM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+      <p>© <span id="year"></span> Belgaum CNC Pvt Ltd. All rights reserved.</p>
+      <p>Made in Belagavi 🇮🇳</p>
+    </div>
+  </div>
+</footer>
+
+<!-- back to top -->
+<a href="#home" id="toTop" class="fixed bottom-6 right-6 z-40 w-12 h-12 grid place-items-center rounded-full bg-steel text-white shadow-lg shadow-steel/40 opacity-0 pointer-events-none transition-opacity">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<!-- styles for logo pills (built by JS but base style here) -->
+<style>
+  .logo-pill{
+    flex:0 0 auto;display:grid;place-items:center;
+    min-width:170px;height:64px;padding:0 1.5rem;
+    border-radius:12px;
+    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);
+    font-family:'Rajdhani',sans-serif;font-weight:700;letter-spacing:.15em;
+    color:#9ca3af;opacity:.5;transition:opacity .3s ease, color .3s ease;
+  }
+  .logo-pill:hover{opacity:1;color:#0ea5e9;}
+</style>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  /* ---- AOS ---- */
+  AOS.init({ duration: 700, once: true, offset: 80, easing: 'ease-out-cubic' });
+
+  /* ---- Year ---- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- Particles ---- */
+  const pc = document.getElementById('particles');
+  for (let i = 0; i < 8; i++) {
+    const p = document.createElement('span');
+    p.className = 'particle';
+    const size = Math.random() * 6 + 3;
+    p.style.width = p.style.height = size + 'px';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.top  = (Math.random() * 80 + 10) + '%';
+    p.style.animationDuration = (Math.random() * 6 + 6) + 's';
+    p.style.animationDelay = (Math.random() * 5) + 's';
+    if (i % 2) p.style.background = '#f97316', p.style.boxShadow = '0 0 8px 2px rgba(249,115,22,.6)';
+    pc.appendChild(p);
+  }
+
+  /* ---- Logo ticker (duplicated for seamless loop) ---- */
+  const track = document.querySelector('.ticker-track');
+  track.innerHTML = '';
+  const names = ['CLIENT 1','CLIENT 2','CLIENT 3','CLIENT 4','CLIENT 5','CLIENT 6','CLIENT 7','CLIENT 8'];
+  const build = () => names.forEach(n => {
+    const s = document.createElement('span');
+    s.className = 'logo-pill';
+    s.textContent = n;
+    track.appendChild(s);
+  });
+  build(); build(); // two sets => -50% loop is seamless
+
+  /* ---- Navbar shrink ---- */
+  const nav = document.getElementById('navbar');
+  const toTop = document.getElementById('toTop');
+  const onScroll = () => {
+    if (window.scrollY > 80) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    if (window.scrollY > 500) { toTop.classList.remove('opacity-0','pointer-events-none'); }
+    else { toTop.classList.add('opacity-0','pointer-events-none'); }
+  };
+  window.addEventListener('scroll', onScroll); onScroll();
+
+  /* ---- Hamburger ---- */
+  const burger = document.getElementById('hamburger');
+  const icon = document.getElementById('hamburger-icon');
+  const menu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  });
+  // close on link click
+  document.querySelectorAll('.mnav').forEach(a =>
+    a.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      icon.classList.add('fa-bars'); icon.classList.remove('fa-xmark');
+    })
+  );
+
+  /* ---- Counter animation ---- */
+  const counters = document.querySelectorAll('.counter');
+  const animateCounter = el => {
+    const target = +el.dataset.target;
+    const dur = 1800; const start = performance.now();
+    const step = now => {
+      const prog = Math.min((now - start) / dur, 1);
+      const eased = 1 - Math.pow(1 - prog, 3);
+      el.textContent = Math.floor(eased * target);
+      if (prog < 1) requestAnimationFrame(step); else el.textContent = target;
+    };
+    requestAnimationFrame(step);
+  };
+  const cObs = new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => { if (e.isIntersecting) { animateCounter(e.target); obs.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  counters.forEach(c => cObs.observe(c));
+
+  /* ---- Active nav link on scroll ---- */
+  const sections = document.querySelectorAll('section[id], header[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = e.target.id;
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { threshold: 0.4, rootMargin: '-20% 0px -40% 0px' });
+  sections.forEach(s => sObs.observe(s));
+
+  /* ---- Form submit ---- */
+  const form = document.getElementById('quote-form');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('form-success').classList.remove('hidden');
+    form.reset();
+    setTimeout(() => document.getElementById('form-success').classList.add('hidden'), 6000);
+  });
+});
+</script>
+</body>
+</html>

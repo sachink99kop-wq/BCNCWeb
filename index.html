@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Belgaum CNC Applications Pvt Ltd | Precision CNC VMC HMC Machining | Belagavi</title>
-<meta name="description" content="Belgaum CNC Applications Pvt Ltd offers precision subcontract CNC, VMC & HMC machining, casting procurement & complete processing, with domestic and export supply from Belagavi, Karnataka, India." />
+<meta name="description" content="Belgaum CNC Applications Pvt Ltd (est. 1989) — ISO 9001:2015 certified precision CNC, VMC, HMC & turn-mill machining of SG Iron and Cast Iron components. Subcontract machining, casting processing, domestic & export supply from Udyambag, Belagavi, Karnataka, India." />
 <meta name="keywords" content="CNC machining Belgaum, VMC machining, HMC machining, subcontract machining Karnataka, casting procurement, precision components, export machining India" />
 <meta name="author" content="Belgaum CNC Applications Pvt Ltd" />
-<link rel="icon" type="image/png" href="BCNC.png" />
-<link rel="apple-touch-icon" href="BCNC.png" />
+<link rel="icon" type="image/png" href="BCNC-light.png" />
+<link rel="apple-touch-icon" href="BCNC-light.png" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
@@ -36,10 +36,10 @@
     theme: {
       extend: {
         colors: {
-          base: '#0a0a0f',
-          surface: '#111118',
-          eb:   '#0ea5e9',
-          steel:'#f97316',
+          base: '#eef2f7',
+          surface: '#ffffff',
+          eb:   '#0284c7',
+          steel:'#ea580c',
         },
         fontFamily: {
           sans: ['Inter', 'sans-serif'],
@@ -55,38 +55,36 @@
 
 <style>
   html { scroll-behavior: smooth; }
-  body { background:#0a0a0f; color:#e5e7eb; }
+  body { background:#eef2f7; color:#334155; }
 
-  /* Gradient heading text */
+  /* Heading text — single solid color */
   .gradient-text{
-    background:linear-gradient(90deg,#0ea5e9 0%,#f97316 100%);
-    -webkit-background-clip:text;background-clip:text;
-    -webkit-text-fill-color:transparent;color:transparent;
+    color:#0284c7;
   }
 
   /* Glass card */
   .glass{
-    background:rgba(255,255,255,0.04);
-    border:1px solid rgba(255,255,255,0.08);
+    background:#ffffff;
+    border:1px solid #cbd5e1;
     border-radius:12px;
-    backdrop-filter:blur(6px);
+    box-shadow:0 1px 3px rgba(15,23,42,.06), 0 1px 2px rgba(15,23,42,.04);
   }
 
   /* Steel/metal gradient feel */
   .steel-bg{
     background:
-      linear-gradient(135deg,rgba(14,165,233,0.06),transparent 40%),
-      linear-gradient(315deg,rgba(249,115,22,0.06),transparent 40%),
-      #111118;
+      linear-gradient(135deg,rgba(2,132,199,0.06),transparent 45%),
+      linear-gradient(315deg,rgba(234,88,12,0.06),transparent 45%),
+      #ffffff;
   }
 
   /* Hero grid + dot pattern */
   .hero-grid{
-    background-color:#0a0a0f;
+    background-color:#eef2f7;
     background-image:
-      linear-gradient(rgba(14,165,233,0.07) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(14,165,233,0.07) 1px,transparent 1px),
-      radial-gradient(rgba(249,115,22,0.10) 1px,transparent 1px);
+      linear-gradient(rgba(2,132,199,0.10) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(2,132,199,0.10) 1px,transparent 1px),
+      radial-gradient(rgba(234,88,12,0.14) 1px,transparent 1px);
     background-size:48px 48px,48px 48px,48px 48px;
     background-position:0 0,0 0,24px 24px;
     animation:gridShift 30s linear infinite;
@@ -94,21 +92,6 @@
   @keyframes gridShift{
     from{background-position:0 0,0 0,24px 24px;}
     to{background-position:48px 48px,48px 48px,72px 72px;}
-  }
-
-  /* Floating particles */
-  .particle{
-    position:absolute;border-radius:9999px;
-    background:#0ea5e9;opacity:.5;
-    box-shadow:0 0 8px 2px rgba(14,165,233,.6);
-    animation:floatUp linear infinite;
-  }
-  @keyframes floatUp{
-    0%{transform:translateY(0) scale(1);opacity:0;}
-    10%{opacity:.6;}
-    50%{opacity:.9;transform:translateY(-40px) scale(1.2);}
-    90%{opacity:.4;}
-    100%{transform:translateY(-90px) scale(.8);opacity:0;}
   }
 
   /* Rotating gear */
@@ -119,15 +102,16 @@
   #navbar{transition:padding .3s ease, background-color .3s ease, box-shadow .3s ease;}
   #navbar.scrolled{
     padding-top:.4rem;padding-bottom:.4rem;
-    background:#0a0a0f;
-    box-shadow:0 8px 30px rgba(0,0,0,.5);
+    background:#eef2f7;
+    box-shadow:0 8px 30px rgba(15,23,42,.10);
   }
 
   /* Service / generic card hover */
   .lift{transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;}
   .lift:hover{
     transform:translateY(-6px);
-    box-shadow:0 16px 40px rgba(14,165,233,.18);
+    box-shadow:0 16px 40px rgba(100,116,139,.20);
+    border-color:#94a3b8;
   }
   .top-line{position:relative;overflow:hidden;}
   .top-line::before{
@@ -176,19 +160,15 @@
 <body class="font-sans antialiased selection:bg-eb/30">
 
 <!-- ============ NAVBAR ============ -->
-<nav id="navbar" class="fixed top-0 inset-x-0 z-50 py-4 bg-base border-b border-white/5">
+<nav id="navbar" class="fixed top-0 inset-x-0 z-50 py-4 bg-base border-b border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
     <!-- Logo -->
     <a href="#home" class="flex items-center gap-3 group">
-      <img src="BCNC.png" alt="Belgaum CNC Applications Pvt Ltd" class="h-10 sm:h-12 w-auto" />
-      <span class="leading-none">
-        <span class="font-display font-bold text-lg sm:text-xl tracking-wide text-white">Belgaum CNC Applications</span>
-        <span class="block text-[10px] sm:text-[11px] tracking-[0.25em] text-eb/80 uppercase">Pvt Ltd.</span>
-      </span>
+      <img src="BCNC-light.png" alt="Belgaum CNC Applications Pvt Ltd" class="h-10 sm:h-12 w-auto" />
     </a>
 
     <!-- Desktop links -->
-    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+    <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
       <li><a href="#home"       class="nav-link">Home</a></li>
       <li><a href="#about"      class="nav-link">About</a></li>
       <li><a href="#services"   class="nav-link">Services</a></li>
@@ -203,15 +183,15 @@
         <i class="fa-solid fa-file-lines"></i> Get Quote
       </a>
       <!-- Hamburger -->
-      <button id="hamburger" aria-label="Toggle menu" class="lg:hidden w-10 h-10 grid place-items-center rounded-card glass text-white">
+      <button id="hamburger" aria-label="Toggle menu" class="lg:hidden w-10 h-10 grid place-items-center rounded-card glass text-slate-900">
         <i id="hamburger-icon" class="fa-solid fa-bars"></i>
       </button>
     </div>
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="lg:hidden hidden border-t border-white/5 bg-base/95 backdrop-blur-md">
-    <ul class="flex flex-col px-6 py-4 gap-1 text-gray-200 font-medium">
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-slate-200 bg-base/95 backdrop-blur-md">
+    <ul class="flex flex-col px-6 py-4 gap-1 text-slate-700 font-medium">
       <li><a href="#home"       class="mnav block py-2.5">Home</a></li>
       <li><a href="#about"      class="mnav block py-2.5">About</a></li>
       <li><a href="#services"   class="mnav block py-2.5">Services</a></li>
@@ -226,9 +206,6 @@
 
 <!-- ============ HERO ============ -->
 <header id="home" class="relative min-h-screen flex items-center hero-grid overflow-hidden pt-28 pb-16">
-  <!-- particles -->
-  <div id="particles" class="absolute inset-0 pointer-events-none"></div>
-
   <!-- decorative rotating gear -->
   <div class="absolute -right-32 top-1/2 -translate-y-1/2 opacity-[0.06] pointer-events-none hidden md:block">
     <i class="fa-solid fa-gear spin-slow text-eb" style="font-size:36rem;"></i>
@@ -240,12 +217,12 @@
         <i class="fa-solid fa-industry"></i> Belagavi · Karnataka · India
       </span>
 
-      <h1 data-aos="fade-up" data-aos-delay="80" class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-white">
+      <h1 data-aos="fade-up" data-aos-delay="80" class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-slate-900">
         Precision Engineered.<br />
         <span class="gradient-text">Built to Perform.</span>
       </h1>
 
-      <p data-aos="fade-up" data-aos-delay="160" class="mt-6 text-base sm:text-lg text-gray-300 max-w-2xl">
+      <p data-aos="fade-up" data-aos-delay="160" class="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl">
         Subcontract CNC | VMC | HMC Machining • Casting Procurement &amp; Processing • Domestic &amp; Export Supply
       </p>
 
@@ -261,26 +238,26 @@
       <!-- counters -->
       <div data-aos="fade-up" data-aos-delay="320" class="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div class="glass p-5 text-center">
-          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="15">0</span>+</div>
-          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Years Experience</p>
+          <div class="font-display text-4xl font-bold text-slate-900"><span class="counter" data-target="36">0</span>+</div>
+          <p class="mt-1 text-xs text-slate-500 uppercase tracking-wider">Years Since 1989</p>
         </div>
         <div class="glass p-5 text-center">
-          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="500">0</span>+</div>
-          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Components Machined</p>
+          <div class="font-display text-4xl font-bold text-slate-900"><span class="counter" data-target="15">0</span></div>
+          <p class="mt-1 text-xs text-slate-500 uppercase tracking-wider">CNC Machines</p>
         </div>
         <div class="glass p-5 text-center">
-          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="50">0</span>+</div>
-          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Clients Served</p>
+          <div class="font-display text-4xl font-bold text-slate-900"><span class="counter" data-target="250">0</span>+</div>
+          <p class="mt-1 text-xs text-slate-500 uppercase tracking-wider">Component Types</p>
         </div>
         <div class="glass p-5 text-center">
-          <div class="font-display text-4xl font-bold gradient-text"><span class="counter" data-target="10">0</span>+</div>
-          <p class="mt-1 text-xs text-gray-400 uppercase tracking-wider">Export Countries</p>
+          <div class="font-display text-4xl font-bold text-slate-900"><span class="counter" data-target="10">0</span>+</div>
+          <p class="mt-1 text-xs text-slate-500 uppercase tracking-wider">Export Countries</p>
         </div>
       </div>
     </div>
   </div>
 
-  <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce hidden sm:block">
+  <a href="#about" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-slate-400 animate-bounce hidden sm:block">
     <i class="fa-solid fa-chevron-down text-xl"></i>
   </a>
 </header>
@@ -293,31 +270,44 @@
       <div data-aos="fade-up">
         <span class="text-eb font-semibold tracking-widest uppercase text-sm">Who We Are</span>
         <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Engineering Trust, One Component at a Time</h2>
-        <p class="mt-6 text-gray-300 leading-relaxed">
-          Belgaum CNC Applications Pvt Ltd is a precision machining company based in Belagavi, Karnataka. We specialise in
-          <strong class="text-white">subcontract CNC, VMC and HMC machining</strong> for OEMs, fabricators and
-          manufacturers who need reliable capacity and consistent quality. From single prototypes to repeat
-          production batches, we machine to your drawings and your tolerances.
+        <p class="mt-6 text-slate-600 leading-relaxed">
+          Belgaum CNC Applications Pvt Ltd was established in <strong class="text-slate-900">1989</strong> as a CNC machine
+          shop for job work, based in Udyambag, Belagavi, Karnataka. We machine components on CNC machines for the
+          general engineering industry — <strong class="text-slate-900">compressors, separators, engines, earth-moving
+          equipment, pumps and valves</strong>, and more.
         </p>
-        <p class="mt-4 text-gray-300 leading-relaxed">
-          Beyond machining alone, we handle <strong class="text-white">casting procurement and complete
-          processing</strong> — sourcing quality castings, then carrying out all required machining operations
-          in-house. This single-point responsibility removes coordination headaches and keeps your supply chain lean.
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          Our robust machining infrastructure includes <strong class="text-slate-900">9 Horizontal Machining Centers,
+          2 Vertical Machining Centers, 1 CNC Vertical Turn-Mill Center and 3 CNC Turning Centers</strong>, backed by
+          strong in-house inspection — CMM, Trimos &amp; Digi-Mahr 2D height gauges, surface finish tester and a full
+          range of precision gauges. As of today we machine about <strong class="text-slate-900">250 different types of cast
+          components in SG Iron and Cast Iron</strong>, with batch sizes from 25 to 500 pieces per month.
         </p>
-        <p class="mt-4 text-gray-300 leading-relaxed">
-          With a strong record in both <strong class="text-white">domestic and export sales</strong>, we deliver
-          finished, inspection-ready components to customers across India and overseas — on specification and on time.
-          Today around <strong class="text-white">80% of our output serves the domestic market</strong> while a growing
-          <strong class="text-white">20% is exported</strong> to overseas customers.
+        <p class="mt-4 text-slate-600 leading-relaxed">
+          An <strong class="text-slate-900">ISO 9001:2015 certified</strong> company with a team of around 50 people, we
+          began exports in 2017 to Atlas Copco Airpower, Belgium, and from November 2025 to PRIMAX Pumps, Dubai. Over
+          <strong class="text-slate-900">50 components</strong> reach global customers such as Atlas Copco, Alfa Laval,
+          Caterpillar, JCB and Wärtsilä through our major partners AKP Foundries and AKP Ferrocast.
         </p>
 
+        <!-- feature pills -->
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="glass px-4 py-2 text-sm font-medium text-slate-700 inline-flex items-center gap-2"><i class="fa-solid fa-certificate text-eb"></i> ISO 9001:2015</span>
+          <span class="glass px-4 py-2 text-sm font-medium text-slate-700 inline-flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-steel"></i> Est. 1989</span>
+          <span class="glass px-4 py-2 text-sm font-medium text-slate-700 inline-flex items-center gap-2"><i class="fa-solid fa-truck-fast text-eb"></i> On-Time Delivery</span>
+        </div>
+      </div>
+
+      <!-- right: supply split + stat grid -->
+      <div data-aos="fade-up" data-aos-delay="150" class="space-y-5">
+
         <!-- supply split -->
-        <div class="mt-8 glass p-6">
+        <div class="glass p-6">
           <div class="flex items-center justify-between text-sm font-medium">
             <span class="inline-flex items-center gap-2 text-eb"><i class="fa-solid fa-warehouse"></i> Domestic Supply</span>
             <span class="inline-flex items-center gap-2 text-steel">Export Supply <i class="fa-solid fa-earth-asia"></i></span>
           </div>
-          <div class="mt-3 h-3 w-full rounded-full overflow-hidden flex bg-white/5">
+          <div class="mt-3 h-3 w-full rounded-full overflow-hidden flex bg-slate-200">
             <div class="h-full bg-eb" style="width:80%"></div>
             <div class="h-full bg-steel" style="width:20%"></div>
           </div>
@@ -327,35 +317,28 @@
           </div>
         </div>
 
-        <!-- feature pills -->
-        <div class="mt-8 flex flex-wrap gap-3">
-          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-certificate text-eb"></i> ISO Quality</span>
-          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-ruler-combined text-steel"></i> Precision Machining</span>
-          <span class="glass px-4 py-2 text-sm font-medium text-gray-200 inline-flex items-center gap-2"><i class="fa-solid fa-truck-fast text-eb"></i> On-Time Delivery</span>
-        </div>
-      </div>
-
-      <!-- stat grid -->
-      <div data-aos="fade-up" data-aos-delay="150" class="grid grid-cols-2 gap-5">
+        <!-- stat grid -->
+        <div class="grid grid-cols-2 gap-5">
         <div class="glass lift p-6">
           <i class="fa-solid fa-microchip text-3xl text-eb"></i>
-          <div class="font-display text-3xl font-bold text-white mt-4">3 Lines</div>
-          <p class="text-sm text-gray-400 mt-1">CNC · VMC · HMC machining capacity</p>
+          <div class="font-display text-3xl font-bold text-slate-900 mt-4">15</div>
+          <p class="text-sm text-slate-500 mt-1">CNC machines — HMC, VMC, VTM &amp; Turning</p>
         </div>
         <div class="glass lift p-6">
-          <i class="fa-solid fa-bullseye text-3xl text-steel"></i>
-          <div class="font-display text-3xl font-bold text-white mt-4">±0.01mm</div>
-          <p class="text-sm text-gray-400 mt-1">Achievable tight tolerances</p>
+          <i class="fa-solid fa-certificate text-3xl text-steel"></i>
+          <div class="font-display text-3xl font-bold text-slate-900 mt-4">ISO 9001</div>
+          <p class="text-sm text-slate-500 mt-1">:2015 certified quality system</p>
         </div>
         <div class="glass lift p-6">
           <i class="fa-solid fa-globe text-3xl text-eb"></i>
-          <div class="font-display text-3xl font-bold text-white mt-4">10+</div>
-          <p class="text-sm text-gray-400 mt-1">Countries supplied via export</p>
+          <div class="font-display text-3xl font-bold text-slate-900 mt-4">10+</div>
+          <p class="text-sm text-slate-500 mt-1">Countries supplied via export</p>
         </div>
         <div class="glass lift p-6">
-          <i class="fa-solid fa-handshake-angle text-3xl text-steel"></i>
-          <div class="font-display text-3xl font-bold text-white mt-4">50+</div>
-          <p class="text-sm text-gray-400 mt-1">Active domestic &amp; export clients</p>
+          <i class="fa-solid fa-users text-3xl text-steel"></i>
+          <div class="font-display text-3xl font-bold text-slate-900 mt-4">50+</div>
+          <p class="text-sm text-slate-500 mt-1">Skilled machining professionals</p>
+        </div>
         </div>
       </div>
     </div>
@@ -368,46 +351,40 @@
     <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
       <span class="text-eb font-semibold tracking-widest uppercase text-sm">What We Do</span>
       <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Our Core Services</h2>
-      <p class="mt-4 text-gray-400">End-to-end machining and supply solutions, engineered around your production needs.</p>
+      <p class="mt-4 text-slate-500">End-to-end machining and supply solutions, engineered around your production needs.</p>
     </div>
 
     <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- card -->
       <div data-aos="fade-up" data-aos-delay="0"   class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-gears"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">CNC Machining</h3>
-        <p class="mt-2 text-sm text-gray-400">Turned and milled precision components with repeatable accuracy across single parts and production batches.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">CNC Machining</h3>
+        <p class="mt-2 text-sm text-slate-500">Turned and milled precision components with repeatable accuracy across single parts and production batches.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-microchip"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">VMC Machining</h3>
-        <p class="mt-2 text-sm text-gray-400">Vertical machining centres for complex prismatic parts, fixtures and tight-tolerance milled features.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">VMC Machining</h3>
+        <p class="mt-2 text-sm text-slate-500">Vertical machining centres for complex prismatic parts, fixtures and tight-tolerance milled features.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="200" class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-layer-group"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">HMC Machining</h3>
-        <p class="mt-2 text-sm text-gray-400">Horizontal machining centres for high-volume, multi-face components with superior chip evacuation.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">HMC Machining</h3>
+        <p class="mt-2 text-sm text-slate-500">Horizontal machining centres for high-volume, multi-face components with superior chip evacuation.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="0"   class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-box-open"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">Casting Procurement</h3>
-        <p class="mt-2 text-sm text-gray-400">Sourcing quality CI, MS and alloy castings, then fully machining them to finished, inspected parts.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">Casting Procurement</h3>
+        <p class="mt-2 text-sm text-slate-500">Sourcing quality CI, MS and alloy castings, then fully machining them to finished, inspected parts.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-users-gear"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">Subcontract Manufacturing</h3>
-        <p class="mt-2 text-sm text-gray-400">Flexible overflow and dedicated capacity for OEMs — machine to your drawings, schedules and quality plans.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">Subcontract Manufacturing</h3>
+        <p class="mt-2 text-sm text-slate-500">Flexible overflow and dedicated capacity for OEMs — machine to your drawings, schedules and quality plans.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="200" class="glass lift top-line p-7">
         <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-earth-asia"></i></span>
-        <h3 class="mt-5 font-display font-bold text-xl text-white">Export Supply</h3>
-        <p class="mt-2 text-sm text-gray-400">Export-ready documentation, packaging and logistics for reliable overseas delivery of finished components.</p>
-        <a href="#contact" class="mt-4 inline-flex items-center gap-1 text-eb text-sm font-semibold">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">Export Supply</h3>
+        <p class="mt-2 text-sm text-slate-500">Export-ready documentation, packaging and logistics for reliable overseas delivery of finished components.</p>
       </div>
     </div>
   </div>
@@ -423,39 +400,39 @@
 
     <div class="mt-16 relative">
       <!-- dashed connector (desktop) -->
-      <div class="hidden lg:block absolute top-8 left-0 right-0 border-t-2 border-dashed border-white/15"></div>
+      <div class="hidden lg:block absolute top-8 left-0 right-0 border-t-2 border-dashed border-slate-300"></div>
 
       <div class="grid lg:grid-cols-5 gap-8 relative">
         <!-- step -->
         <div data-aos="fade-up" data-aos-delay="0" class="text-center">
           <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">01</div>
           <i class="fa-solid fa-clipboard-list text-2xl text-eb mt-5"></i>
-          <h3 class="mt-3 font-display font-bold text-lg text-white">Requirement Analysis</h3>
-          <p class="mt-2 text-sm text-gray-400">Drawings, tolerances, volumes and timelines reviewed with the customer.</p>
+          <h3 class="mt-3 font-display font-bold text-lg text-slate-900">Requirement Analysis</h3>
+          <p class="mt-2 text-sm text-slate-500">Drawings, tolerances, volumes and timelines reviewed with the customer.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="150" class="text-center">
           <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">02</div>
           <i class="fa-solid fa-box text-2xl text-eb mt-5"></i>
-          <h3 class="mt-3 font-display font-bold text-lg text-white">Material / Casting Procurement</h3>
-          <p class="mt-2 text-sm text-gray-400">Quality raw material and castings sourced from trusted suppliers.</p>
+          <h3 class="mt-3 font-display font-bold text-lg text-slate-900">Material / Casting Procurement</h3>
+          <p class="mt-2 text-sm text-slate-500">Quality raw material and castings sourced from trusted suppliers.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="300" class="text-center">
           <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-steel text-steel font-display font-bold text-xl">03</div>
           <i class="fa-solid fa-gears text-2xl text-steel mt-5"></i>
-          <h3 class="mt-3 font-display font-bold text-lg text-white">CNC / VMC / HMC Machining</h3>
-          <p class="mt-2 text-sm text-gray-400">Precision machining operations executed to specification in-house.</p>
+          <h3 class="mt-3 font-display font-bold text-lg text-slate-900">CNC / VMC / HMC Machining</h3>
+          <p class="mt-2 text-sm text-slate-500">Precision machining operations executed to specification in-house.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="450" class="text-center">
           <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-eb text-eb font-display font-bold text-xl">04</div>
           <i class="fa-solid fa-magnifying-glass-chart text-2xl text-eb mt-5"></i>
-          <h3 class="mt-3 font-display font-bold text-lg text-white">Quality Inspection</h3>
-          <p class="mt-2 text-sm text-gray-400">Dimensional checks and inspection reports before dispatch.</p>
+          <h3 class="mt-3 font-display font-bold text-lg text-slate-900">Quality Inspection</h3>
+          <p class="mt-2 text-sm text-slate-500">Dimensional checks and inspection reports before dispatch.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="600" class="text-center">
           <div class="relative z-10 mx-auto w-16 h-16 rounded-full grid place-items-center bg-base border-2 border-steel text-steel font-display font-bold text-xl">05</div>
           <i class="fa-solid fa-truck-ramp-box text-2xl text-steel mt-5"></i>
-          <h3 class="mt-3 font-display font-bold text-lg text-white">Delivery (Domestic / Export)</h3>
-          <p class="mt-2 text-sm text-gray-400">Packed, documented and shipped to domestic or overseas customers.</p>
+          <h3 class="mt-3 font-display font-bold text-lg text-slate-900">Delivery (Domestic / Export)</h3>
+          <p class="mt-2 text-sm text-slate-500">Packed, documented and shipped to domestic or overseas customers.</p>
         </div>
       </div>
     </div>
@@ -470,61 +447,286 @@
       <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Machining Capabilities</h2>
     </div>
 
-    <div class="mt-14 grid md:grid-cols-3 gap-6">
-      <!-- CNC -->
-      <div data-aos="fade-up" class="glass lift p-8">
-        <div class="flex items-center gap-3">
-          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-gears"></i></span>
-          <h3 class="font-display font-bold text-2xl text-white">CNC Turning</h3>
+    <p class="text-center text-slate-500 max-w-2xl mx-auto mt-4" data-aos="fade-up">A fleet of 15 CNC machines backed by full in-house inspection.</p>
+
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- HMC -->
+      <div data-aos="fade-up" class="glass lift p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-layer-group"></i></span>
+          <span class="font-display font-bold text-3xl gradient-text">9</span>
         </div>
-        <ul class="mt-6 space-y-3 text-sm text-gray-300">
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Tolerances down to ±0.01 mm</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Bar &amp; chuck work up to Ø300 mm</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> MS, CI, alloy &amp; stainless steels</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Prototype to high-volume batches</li>
+        <h3 class="mt-4 font-display font-bold text-xl text-slate-900">Horizontal Machining Centers</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Multi-face machining in one setup</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Ideal for heavy SG Iron &amp; CI castings</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> High productivity &amp; chip evacuation</li>
+        </ul>
+      </div>
+      <!-- CNC Turning -->
+      <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-steel/15 text-steel text-xl"><i class="fa-solid fa-gears"></i></span>
+          <span class="font-display font-bold text-3xl gradient-text">3</span>
+        </div>
+        <h3 class="mt-4 font-display font-bold text-xl text-slate-900">CNC Turning Centers</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Turned components to ±0.01 mm</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> SG Iron, CI, alloy &amp; steels</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Prototype to production batches</li>
         </ul>
       </div>
       <!-- VMC -->
-      <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-8">
-        <div class="flex items-center gap-3">
-          <span class="w-12 h-12 grid place-items-center rounded-full bg-steel/15 text-steel text-xl"><i class="fa-solid fa-microchip"></i></span>
-          <h3 class="font-display font-bold text-2xl text-white">VMC Milling</h3>
+      <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-microchip"></i></span>
+          <span class="font-display font-bold text-3xl gradient-text">2</span>
         </div>
-        <ul class="mt-6 space-y-3 text-sm text-gray-300">
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Work envelope up to 1000×500×500 mm</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> 3-axis precision milling</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Complex prismatic &amp; cast parts</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Surface finish to Ra 0.8</li>
+        <h3 class="mt-4 font-display font-bold text-xl text-slate-900">Vertical Machining Centers</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> 3-axis precision milling</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Complex prismatic &amp; cast parts</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Tight-tolerance milled features</li>
         </ul>
       </div>
-      <!-- HMC -->
-      <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-8">
-        <div class="flex items-center gap-3">
-          <span class="w-12 h-12 grid place-items-center rounded-full bg-eb/15 text-eb text-xl"><i class="fa-solid fa-layer-group"></i></span>
-          <h3 class="font-display font-bold text-2xl text-white">HMC Machining</h3>
+      <!-- VTM -->
+      <div data-aos="fade-up" data-aos-delay="300" class="glass lift p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 grid place-items-center rounded-full bg-steel/15 text-steel text-xl"><i class="fa-solid fa-arrows-spin"></i></span>
+          <span class="font-display font-bold text-3xl gradient-text">1</span>
         </div>
-        <ul class="mt-6 space-y-3 text-sm text-gray-300">
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Pallet-changer high productivity</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Multi-face machining in one setup</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Ideal for heavy CI castings</li>
-          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-eb mt-0.5"></i> Superior chip evacuation</li>
+        <h3 class="mt-4 font-display font-bold text-xl text-slate-900">CNC Vertical Turn-Mill Center</h3>
+        <ul class="mt-4 space-y-2.5 text-sm text-slate-600">
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Turning &amp; milling in one setup</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Reduced handling &amp; lead time</li>
+          <li class="flex gap-2"><i class="fa-solid fa-circle-check text-steel mt-0.5"></i> Consistent, repeatable accuracy</li>
         </ul>
       </div>
     </div>
 
     <!-- materials -->
     <div class="mt-14 text-center" data-aos="fade-up">
-      <h3 class="font-display font-semibold text-lg text-gray-300 mb-6">Materials We Work With</h3>
+      <h3 class="font-display font-semibold text-lg text-slate-600 mb-6">Materials We Work With</h3>
       <div class="flex flex-wrap justify-center gap-3">
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Mild Steel (MS)</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Cast Iron (CI)</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Aluminium</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Brass</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Stainless Steel</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Alloy Steel</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Bronze</span>
-        <span class="glass px-5 py-2 text-sm font-medium text-gray-200">Titanium</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">SG Iron</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Cast Iron (CI)</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Mild Steel (MS)</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Aluminium</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Brass</span>
       </div>
+    </div>
+
+    <!-- inspection -->
+    <div class="mt-12 glass p-8" data-aos="fade-up">
+      <div class="flex items-center gap-3 justify-center mb-6">
+        <i class="fa-solid fa-magnifying-glass-chart text-2xl text-eb"></i>
+        <h3 class="font-display font-bold text-xl text-slate-900">In-House Quality &amp; Inspection</h3>
+      </div>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">CMM</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Trimos 2D Height Gauge</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Digi-Mahr 2D Height Gauge</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Surface Finish Tester</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Bore &amp; Plug Gauges</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Master Ring &amp; ID/OD Gauges</span>
+        <span class="glass px-5 py-2 text-sm font-medium text-slate-700">Digital Verniers &amp; Micrometers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MACHINERY GALLERY ============ -->
+<section id="machinery" class="py-24 steel-bg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-eb font-semibold tracking-widest uppercase text-sm">Our Shop Floor</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Our Machinery</h2>
+      <p class="mt-4 text-slate-500">A look at the CNC machines and inspection equipment behind every precision component.</p>
+    </div>
+
+    <!--
+      HOW TO ADD PHOTOS:
+      Drop 6 images named machine-1.png … machine-6.png into the project folder
+      (same folder as index.html). Recommended size ~800×600px (4:3), .png or .jpg.
+      Until an image is added, a styled placeholder is shown automatically.
+    -->
+    <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- machine 1 -->
+      <figure data-aos="fade-up" data-aos-delay="0" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-1.png" alt="Hyundai Kia HMC KH63G" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-1.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">Hyundai Kia HMC KH63G</h3><p class="text-sm text-slate-500 mt-1">Horizontal machining center · multi-face machining</p></figcaption>
+      </figure>
+
+      <!-- machine 2 -->
+      <figure data-aos="fade-up" data-aos-delay="100" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-2.png" alt="Hyundai Kia HMC KH63G" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-2.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">Hyundai Kia HMC KH63G</h3><p class="text-sm text-slate-500 mt-1">Horizontal machining center · multi-face machining</p></figcaption>
+      </figure>
+
+      <!-- machine 3 -->
+      <figure data-aos="fade-up" data-aos-delay="200" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-3.png" alt="AMS HMC CMH400" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-3.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">AMS HMC CMH400</h3><p class="text-sm text-slate-500 mt-1">Horizontal machining center</p></figcaption>
+      </figure>
+
+      <!-- machine 4 -->
+      <figure data-aos="fade-up" data-aos-delay="0" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-4.png" alt="AMS HMC CMH500" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-4.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">AMS HMC CMH500</h3><p class="text-sm text-slate-500 mt-1">Horizontal machining center</p></figcaption>
+      </figure>
+
+      <!-- machine 5 -->
+      <figure data-aos="fade-up" data-aos-delay="100" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-5.png" alt="CMM Inspection" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-5.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">CMM Inspection</h3><p class="text-sm text-slate-500 mt-1">Coordinate measuring machine</p></figcaption>
+      </figure>
+
+      <!-- machine 6 -->
+      <figure data-aos="fade-up" data-aos-delay="200" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="machine-6.png" alt="Machine Shop Floor" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">machine-6.png</code></p>
+            <p class="text-xs text-slate-400">Recommended 800×600px</p>
+          </div>
+        </div>
+        <figcaption class="p-5"><h3 class="font-display font-bold text-lg text-slate-900">Machine Shop Floor</h3><p class="text-sm text-slate-500 mt-1">Our production facility at Udyambag</p></figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS GALLERY ============ -->
+<section id="applications" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-steel font-semibold tracking-widest uppercase text-sm">What We Machine</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Products We Machine</h2>
+      <p class="mt-4 text-slate-500">Precision-machined cast components for a wide range of applications.</p>
+    </div>
+
+    <!--
+      HOW TO ADD PHOTOS:
+      Drop these 5 images into the project folder (same folder as index.html):
+      compressor.png · construction.png · separator.png · valves.png · pumps.png
+      Recommended size ~600×400px (4:3), .png or .jpg. A styled placeholder
+      is shown until the image is added.
+    -->
+    <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- product: compressor -->
+      <figure data-aos="fade-up" data-aos-delay="0" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="compressor.png" alt="Compressor components" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">compressor.png</code></p>
+          </div>
+        </div>
+        <figcaption class="p-5 text-center"><h3 class="font-display font-bold text-lg text-slate-900">Compressor</h3></figcaption>
+      </figure>
+
+      <!-- product: construction -->
+      <figure data-aos="fade-up" data-aos-delay="80" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="construction.png" alt="Construction equipment components" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">construction.png</code></p>
+          </div>
+        </div>
+        <figcaption class="p-5 text-center"><h3 class="font-display font-bold text-lg text-slate-900">Construction</h3></figcaption>
+      </figure>
+
+      <!-- product: separator -->
+      <figure data-aos="fade-up" data-aos-delay="160" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="separator.png" alt="Separator components" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">separator.png</code></p>
+          </div>
+        </div>
+        <figcaption class="p-5 text-center"><h3 class="font-display font-bold text-lg text-slate-900">Separator</h3></figcaption>
+      </figure>
+
+      <!-- product: valves -->
+      <figure data-aos="fade-up" data-aos-delay="240" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="valves.png" alt="Valve components" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">valves.png</code></p>
+          </div>
+        </div>
+        <figcaption class="p-5 text-center"><h3 class="font-display font-bold text-lg text-slate-900">Valves</h3></figcaption>
+      </figure>
+
+      <!-- product: pumps -->
+      <figure data-aos="fade-up" data-aos-delay="320" class="glass lift overflow-hidden group">
+        <div class="relative aspect-[4/3] bg-white">
+          <img src="pumps.png" alt="Pump components" class="absolute inset-0 w-full h-full object-contain p-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="absolute inset-0 hidden flex-col items-center justify-center text-center px-4">
+            <i class="fa-solid fa-image text-4xl text-eb/60"></i>
+            <p class="mt-3 text-sm font-semibold text-slate-600">Add <code class="text-eb">pumps.png</code></p>
+          </div>
+        </div>
+        <figcaption class="p-5 text-center"><h3 class="font-display font-bold text-lg text-slate-900">Pumps</h3></figcaption>
+      </figure>
+
+      <!-- content card: custom components -->
+      <div data-aos="fade-up" data-aos-delay="400" class="glass lift p-8 flex flex-col justify-center text-center relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 opacity-10"><i class="fa-solid fa-gears text-[10rem] text-eb"></i></div>
+        <span class="mx-auto w-16 h-16 grid place-items-center rounded-full bg-steel/15 text-steel text-2xl relative"><i class="fa-solid fa-cubes-stacked"></i></span>
+        <h3 class="mt-5 font-display font-bold text-2xl text-slate-900 relative">Custom Cast Components</h3>
+        <p class="mt-3 text-sm text-slate-600 relative">
+          Beyond these applications, we machine around <strong class="text-slate-900">250 different types of cast
+          components</strong> in SG Iron and Cast Iron — from prototypes to production batches of 25 to 500 pieces
+          per month, all to your drawings and tolerances.
+        </p>
+        <a href="#contact" class="mt-6 btn-hover btn-orange inline-flex w-max mx-auto items-center gap-2 bg-steel text-white font-semibold px-6 py-3 rounded-card relative">
+          <i class="fa-solid fa-paper-plane"></i> Discuss Your Part
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -538,14 +740,14 @@
     </div>
 
     <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-5">
-      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-car-side text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Automotive</h3></div>
-      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-jet-fighter text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Aerospace</h3></div>
-      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-oil-well text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Hydraulics</h3></div>
-      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-faucet text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Pumps &amp; Valves</h3></div>
-      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-tractor text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Agricultural Equipment</h3></div>
-      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-screwdriver-wrench text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">General Engineering</h3></div>
-      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-shield-halved text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-white">Defence</h3></div>
-      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-gas-pump text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-white">Oil &amp; Gas</h3></div>
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-wind text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Compressors</h3></div>
+      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-filter text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Separators</h3></div>
+      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-gauge-high text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Engines</h3></div>
+      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-truck-monster text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Earth-Moving Equipment</h3></div>
+      <div data-aos="fade-up" data-aos-delay="0"   class="glass scale-hover p-7 text-center"><i class="fa-solid fa-faucet text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Pumps &amp; Valves</h3></div>
+      <div data-aos="fade-up" data-aos-delay="60"  class="glass scale-hover p-7 text-center"><i class="fa-solid fa-ship text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Marine &amp; Diesel</h3></div>
+      <div data-aos="fade-up" data-aos-delay="120" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-industry text-3xl text-eb"></i><h3 class="mt-4 font-display font-semibold text-slate-900">Foundry &amp; Castings</h3></div>
+      <div data-aos="fade-up" data-aos-delay="180" class="glass scale-hover p-7 text-center"><i class="fa-solid fa-screwdriver-wrench text-3xl text-steel"></i><h3 class="mt-4 font-display font-semibold text-slate-900">General Engineering</h3></div>
     </div>
   </div>
 </section>
@@ -559,7 +761,7 @@
         <div class="absolute -right-10 -bottom-10 opacity-10"><i class="fa-solid fa-gear text-[14rem] text-eb spin-slow"></i></div>
         <span class="text-eb font-semibold tracking-widest uppercase text-sm relative">Why Choose Us</span>
         <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text relative">Built on Precision &amp; Trust</h2>
-        <p class="mt-6 text-gray-300 relative">
+        <p class="mt-6 text-slate-600 relative">
           We combine modern machining capacity with disciplined quality control and dependable delivery.
           From casting to finished part, you get one accountable partner committed to your specification —
           whether you ship across the district or across the world.
@@ -571,20 +773,20 @@
 
       <!-- right 2x2 -->
       <div class="grid sm:grid-cols-2 gap-5">
-        <div data-aos="fade-up" data-aos-delay="0"   class="glass lift p-7"><i class="fa-solid fa-bullseye text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Precision Quality</h3><p class="mt-2 text-sm text-gray-400">Tight tolerances held consistently across every batch we produce.</p></div>
-        <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-7"><i class="fa-solid fa-users-gear text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Subcontract Experts</h3><p class="mt-2 text-sm text-gray-400">Flexible capacity that scales with your demand and schedules.</p></div>
-        <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-7"><i class="fa-solid fa-industry text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Casting to Finish</h3><p class="mt-2 text-sm text-gray-400">Full process under one roof — procurement through finished part.</p></div>
-        <div data-aos="fade-up" data-aos-delay="300" class="glass lift p-7"><i class="fa-solid fa-globe text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-white">Domestic &amp; Export</h3><p class="mt-2 text-sm text-gray-400">Proven global supply with export-ready documentation and logistics.</p></div>
+        <div data-aos="fade-up" data-aos-delay="0"   class="glass lift p-7"><i class="fa-solid fa-bullseye text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-slate-900">Precision Quality</h3><p class="mt-2 text-sm text-slate-500">Tight tolerances held consistently across every batch we produce.</p></div>
+        <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-7"><i class="fa-solid fa-users-gear text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-slate-900">Subcontract Experts</h3><p class="mt-2 text-sm text-slate-500">Flexible capacity that scales with your demand and schedules.</p></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-7"><i class="fa-solid fa-industry text-2xl text-eb"></i><h3 class="mt-4 font-display font-bold text-lg text-slate-900">Casting to Finish</h3><p class="mt-2 text-sm text-slate-500">Full process under one roof — procurement through finished part.</p></div>
+        <div data-aos="fade-up" data-aos-delay="300" class="glass lift p-7"><i class="fa-solid fa-globe text-2xl text-steel"></i><h3 class="mt-4 font-display font-bold text-lg text-slate-900">Domestic &amp; Export</h3><p class="mt-2 text-sm text-slate-500">Proven global supply with export-ready documentation and logistics.</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ CLIENTS / TRUST ============ -->
-<section class="py-20 steel-bg border-y border-white/5">
+<section class="py-20 steel-bg border-y border-slate-200">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <h2 class="text-center font-display font-bold text-2xl sm:text-3xl text-gray-300" data-aos="fade-up">Trusted By</h2>
-    <p class="text-center text-gray-500 mt-2 text-sm" data-aos="fade-up">Manufacturers and OEMs who rely on our machining capacity</p>
+    <h2 class="text-center font-display font-bold text-2xl sm:text-3xl text-slate-600" data-aos="fade-up">Trusted By</h2>
+    <p class="text-center text-slate-400 mt-2 text-sm" data-aos="fade-up">Manufacturers and OEMs who rely on our machining capacity</p>
 
     <div class="ticker mt-10 overflow-hidden" data-aos="fade-up">
       <div class="ticker-track gap-5">
@@ -594,13 +796,42 @@
   </div>
 </section>
 
+<!-- ============ EXPANSION ============ -->
+<section id="expansion" class="py-24 bg-base">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
+      <span class="text-steel font-semibold tracking-widest uppercase text-sm">Growing For The Future</span>
+      <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">New Expansion Project</h2>
+      <p class="mt-4 text-slate-500">A new ~30,000 sq. ft. machining facility at Waghwade Road — about 6 km from our current plant.</p>
+    </div>
+
+    <div class="mt-14 grid lg:grid-cols-3 gap-6">
+      <div data-aos="fade-up" class="glass lift p-8">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-vector-square"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">30,000 Sq. Ft. Facility</h3>
+        <p class="mt-2 text-sm text-slate-500">A dedicated new machining facility at Waghwade Road, roughly 6 km from the existing Udyambag plant.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100" class="glass lift p-8">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-steel/15 text-steel text-2xl"><i class="fa-solid fa-helmet-safety"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">Phase 1 — Building</h3>
+        <p class="mt-2 text-sm text-slate-500">Construction begins July 2026 and is expected to be completed within 6 to 8 months.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200" class="glass lift p-8">
+        <span class="w-14 h-14 grid place-items-center rounded-full bg-eb/15 text-eb text-2xl"><i class="fa-solid fa-layer-group"></i></span>
+        <h3 class="mt-5 font-display font-bold text-xl text-slate-900">Phase 2 — New Machines</h3>
+        <p class="mt-2 text-sm text-slate-500">Additional HMCs and VTLs — starting with one HMC and one VTL, then further capacity added in stages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CONTACT ============ -->
-<section id="contact" class="py-24 bg-base">
+<section id="contact" class="py-24 steel-bg">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="text-center max-w-2xl mx-auto" data-aos="fade-up">
       <span class="text-eb font-semibold tracking-widest uppercase text-sm">Get In Touch</span>
       <h2 class="mt-3 font-display font-bold text-4xl sm:text-5xl gradient-text">Request a Quote</h2>
-      <p class="mt-4 text-gray-400">Send us your drawings or requirements and our team will respond promptly.</p>
+      <p class="mt-4 text-slate-500">Send us your drawings or requirements and our team will respond promptly.</p>
     </div>
 
     <div class="mt-14 grid lg:grid-cols-2 gap-10">
@@ -608,19 +839,25 @@
       <div data-aos="fade-up" class="space-y-5">
         <div class="glass p-6 flex gap-4">
           <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-eb/15 text-eb text-lg"><i class="fa-solid fa-location-dot"></i></span>
-          <div><h3 class="font-display font-bold text-white">Address</h3><p class="text-sm text-gray-400 mt-1">Industrial Estate, Belagavi (Belgaum),<br>Karnataka 590001, India</p></div>
+          <div><h3 class="font-display font-bold text-slate-900">Address</h3><p class="text-sm text-slate-500 mt-1">Belgaum CNC Applications Pvt. Ltd.<br>R.S. No. 703/1/4, Udyambag,<br>Belgaum 590008, Karnataka, India</p><p class="text-xs text-slate-400 mt-2">GSTIN: 29AABCB0515D1ZA</p></div>
         </div>
         <div class="glass p-6 flex gap-4">
-          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-steel/15 text-steel text-lg"><i class="fa-solid fa-phone"></i></span>
-          <div><h3 class="font-display font-bold text-white">Phone</h3><p class="text-sm text-gray-400 mt-1">+91 99XXX XXXXX<br>+91 88XXX XXXXX</p></div>
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-steel/15 text-steel text-lg"><i class="fa-solid fa-user-tie"></i></span>
+          <div>
+            <h3 class="font-display font-bold text-slate-900">Mr. Santosh Kanetkar</h3>
+            <p class="text-sm text-slate-500 mt-1"><a href="tel:+919448497524" class="hover:text-eb transition">+91 94484 97524</a><br><a href="mailto:santoshkanetkar@belgaumcnc.com" class="hover:text-eb transition">santoshkanetkar@belgaumcnc.com</a></p>
+          </div>
         </div>
         <div class="glass p-6 flex gap-4">
-          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-eb/15 text-eb text-lg"><i class="fa-solid fa-envelope"></i></span>
-          <div><h3 class="font-display font-bold text-white">Email</h3><p class="text-sm text-gray-400 mt-1">sales@belgaumcnc.com<br>export@belgaumcnc.com</p></div>
+          <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-eb/15 text-eb text-lg"><i class="fa-solid fa-user-tie"></i></span>
+          <div>
+            <h3 class="font-display font-bold text-slate-900">Mr. Umesh Chougule</h3>
+            <p class="text-sm text-slate-500 mt-1"><a href="tel:+919448497591" class="hover:text-eb transition">+91 94484 97591</a><br><a href="mailto:bcncmarketing@belgaumcnc.com" class="hover:text-eb transition">bcncmarketing@belgaumcnc.com</a></p>
+          </div>
         </div>
         <div class="glass p-6 flex gap-4">
           <span class="w-12 h-12 shrink-0 grid place-items-center rounded-full bg-steel/15 text-steel text-lg"><i class="fa-solid fa-clock"></i></span>
-          <div><h3 class="font-display font-bold text-white">Working Hours</h3><p class="text-sm text-gray-400 mt-1">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: Closed</p></div>
+          <div><h3 class="font-display font-bold text-slate-900">Working Hours</h3><p class="text-sm text-slate-500 mt-1">Mon – Sat: 9:00 AM – 7:00 PM<br>Sunday: Closed</p></div>
         </div>
       </div>
 
@@ -629,27 +866,27 @@
         <form id="quote-form" class="glass p-7 sm:p-9 space-y-5">
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
-              <label class="block text-sm text-gray-300 mb-2">Name</label>
-              <input required type="text" name="name" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Your name" />
+              <label class="block text-sm text-slate-600 mb-2">Name</label>
+              <input required type="text" name="name" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900 placeholder-gray-500" placeholder="Your name" />
             </div>
             <div>
-              <label class="block text-sm text-gray-300 mb-2">Company Name</label>
-              <input type="text" name="company" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Company" />
+              <label class="block text-sm text-slate-600 mb-2">Company Name</label>
+              <input type="text" name="company" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900 placeholder-gray-500" placeholder="Company" />
             </div>
           </div>
           <div class="grid sm:grid-cols-2 gap-5">
             <div>
-              <label class="block text-sm text-gray-300 mb-2">Email</label>
-              <input required type="email" name="email" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="you@email.com" />
+              <label class="block text-sm text-slate-600 mb-2">Email</label>
+              <input required type="email" name="email" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900 placeholder-gray-500" placeholder="you@email.com" />
             </div>
             <div>
-              <label class="block text-sm text-gray-300 mb-2">Phone</label>
-              <input type="tel" name="phone" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="+91" />
+              <label class="block text-sm text-slate-600 mb-2">Phone</label>
+              <input type="tel" name="phone" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900 placeholder-gray-500" placeholder="+91" />
             </div>
           </div>
           <div>
-            <label class="block text-sm text-gray-300 mb-2">Service Required</label>
-            <select name="service" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white">
+            <label class="block text-sm text-slate-600 mb-2">Service Required</label>
+            <select name="service" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900">
               <option value="">Select a service…</option>
               <option>CNC Machining</option>
               <option>VMC Machining</option>
@@ -660,8 +897,8 @@
             </select>
           </div>
           <div>
-            <label class="block text-sm text-gray-300 mb-2">Message</label>
-            <textarea name="message" rows="4" class="glow-input w-full bg-surface border border-white/10 rounded-card px-4 py-3 text-sm text-white placeholder-gray-500" placeholder="Tell us about your components, quantities and timelines…"></textarea>
+            <label class="block text-sm text-slate-600 mb-2">Message</label>
+            <textarea name="message" rows="4" class="glow-input w-full bg-surface border border-slate-200 rounded-card px-4 py-3 text-sm text-slate-900 placeholder-gray-500" placeholder="Tell us about your components, quantities and timelines…"></textarea>
           </div>
           <button type="submit" class="btn-hover btn-orange w-full inline-flex items-center justify-center gap-2 bg-steel text-white font-semibold px-7 py-3.5 rounded-card">
             Send Request <i class="fa-solid fa-arrow-right"></i>
@@ -676,42 +913,43 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer class="bg-base border-t border-white/5 pt-16 pb-8">
+<footer class="bg-base border-t border-slate-200 pt-16 pb-8">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
     <div class="grid sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1.6fr] gap-x-8 gap-y-10">
       <!-- brand -->
       <div>
         <div class="flex items-center gap-3">
-          <img src="BCNC.png" alt="Belgaum CNC Applications Pvt Ltd" class="h-12 w-auto" />
+          <img src="BCNC-light.png" alt="Belgaum CNC Applications Pvt Ltd" class="h-12 w-auto" />
           <span class="leading-none">
-            <span class="block font-display font-bold text-lg text-white">Belgaum CNC Applications</span>
+            <span class="block font-display font-bold text-lg text-slate-900">Belgaum CNC Applications</span>
             <span class="block text-[10px] tracking-[0.25em] text-eb/80 uppercase mt-0.5">Pvt Ltd.</span>
           </span>
         </div>
-        <p class="mt-4 text-sm text-gray-400">Precision subcontract CNC, VMC &amp; HMC machining, casting procurement and processing — domestic &amp; export supply from Belagavi, Karnataka.</p>
+        <p class="mt-4 text-sm text-slate-500">Established 1989 · ISO 9001:2015 certified precision CNC, VMC, HMC &amp; turn-mill machining of SG Iron and Cast Iron components — domestic &amp; export supply from Udyambag, Belagavi, Karnataka.</p>
         <div class="flex gap-3 mt-5">
-          <a href="#" aria-label="LinkedIn" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-eb hover:border-eb/50 transition"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="WhatsApp" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#contact" aria-label="Email" class="w-10 h-10 grid place-items-center rounded-full glass text-gray-300 hover:text-steel transition"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" aria-label="LinkedIn" class="w-10 h-10 grid place-items-center rounded-full glass text-slate-600 hover:text-eb hover:border-eb/50 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/919448497524" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-10 h-10 grid place-items-center rounded-full glass text-slate-600 hover:text-green-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:bcncmarketing@belgaumcnc.com" aria-label="Email" class="w-10 h-10 grid place-items-center rounded-full glass text-slate-600 hover:text-steel transition"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
 
       <!-- quick links -->
       <div>
-        <h3 class="font-display font-bold text-white mb-4">Quick Links</h3>
-        <ul class="space-y-2.5 text-sm text-gray-400">
+        <h3 class="font-display font-bold text-slate-900 mb-4">Quick Links</h3>
+        <ul class="space-y-2.5 text-sm text-slate-500">
           <li><a href="#home" class="hover:text-eb transition">Home</a></li>
           <li><a href="#about" class="hover:text-eb transition">About Us</a></li>
           <li><a href="#process" class="hover:text-eb transition">Process</a></li>
           <li><a href="#industries" class="hover:text-eb transition">Industries</a></li>
           <li><a href="#whyus" class="hover:text-eb transition">Why Us</a></li>
+          <li><a href="#expansion" class="hover:text-eb transition">Expansion</a></li>
         </ul>
       </div>
 
       <!-- services -->
       <div>
-        <h3 class="font-display font-bold text-white mb-4">Services</h3>
-        <ul class="space-y-2.5 text-sm text-gray-400">
+        <h3 class="font-display font-bold text-slate-900 mb-4">Services</h3>
+        <ul class="space-y-2.5 text-sm text-slate-500">
           <li><a href="#services" class="hover:text-eb transition">CNC Machining</a></li>
           <li><a href="#services" class="hover:text-eb transition">VMC Machining</a></li>
           <li><a href="#services" class="hover:text-eb transition">HMC Machining</a></li>
@@ -722,17 +960,17 @@
 
       <!-- contact -->
       <div>
-        <h3 class="font-display font-bold text-white mb-4">Contact Info</h3>
-        <ul class="space-y-3 text-sm text-gray-400">
-          <li class="flex gap-3"><i class="fa-solid fa-location-dot text-eb mt-1"></i> Industrial Estate, Belagavi, Karnataka 590001</li>
-          <li class="flex gap-3"><i class="fa-solid fa-phone text-eb mt-1"></i> +91 99XXX XXXXX</li>
-          <li class="flex gap-3"><i class="fa-solid fa-envelope text-eb mt-1"></i> sales@belgaumcnc.com</li>
+        <h3 class="font-display font-bold text-slate-900 mb-4">Contact Info</h3>
+        <ul class="space-y-3 text-sm text-slate-500">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot text-eb mt-1"></i> R.S. No. 703/1/4, Udyambag, Belgaum 590008, Karnataka</li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone text-eb mt-1"></i> <a href="tel:+919448497524" class="hover:text-eb transition">+91 94484 97524</a></li>
+          <li class="flex gap-3"><i class="fa-solid fa-envelope text-eb mt-1"></i> <a href="mailto:bcncmarketing@belgaumcnc.com" class="hover:text-eb transition">bcncmarketing@belgaumcnc.com</a></li>
           <li class="flex gap-3"><i class="fa-solid fa-clock text-eb mt-1"></i> Mon – Sat, 9:00 AM – 7:00 PM</li>
         </ul>
       </div>
     </div>
 
-    <div class="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+    <div class="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-400">
       <p>© <span id="year"></span> Belgaum CNC Applications Pvt Ltd. All rights reserved.</p>
       <p>Made in Belagavi 🇮🇳</p>
     </div>
@@ -750,8 +988,9 @@
     flex:0 0 auto;display:flex;align-items:center;justify-content:center;
     width:200px;height:110px;padding:14px 20px;
     border-radius:12px;overflow:hidden;
-    background:#ffffff;border:1px solid rgba(255,255,255,.10);
-    opacity:.8;
+    background:#ffffff;border:1px solid #cbd5e1;
+    box-shadow:0 1px 3px rgba(15,23,42,.06);
+    opacity:.85;
     transition:opacity .3s ease, transform .3s ease;
   }
   .logo-pill img{
@@ -770,21 +1009,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Year ---- */
   document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ---- Particles ---- */
-  const pc = document.getElementById('particles');
-  for (let i = 0; i < 8; i++) {
-    const p = document.createElement('span');
-    p.className = 'particle';
-    const size = Math.random() * 6 + 3;
-    p.style.width = p.style.height = size + 'px';
-    p.style.left = Math.random() * 100 + '%';
-    p.style.top  = (Math.random() * 80 + 10) + '%';
-    p.style.animationDuration = (Math.random() * 6 + 6) + 's';
-    p.style.animationDelay = (Math.random() * 5) + 's';
-    if (i % 2) p.style.background = '#f97316', p.style.boxShadow = '0 0 8px 2px rgba(249,115,22,.6)';
-    pc.appendChild(p);
-  }
 
   /* ---- Logo ticker (duplicated for seamless loop) ---- */
   const track = document.querySelector('.ticker-track');
